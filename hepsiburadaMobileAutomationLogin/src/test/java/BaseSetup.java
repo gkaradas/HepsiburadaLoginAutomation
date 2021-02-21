@@ -35,15 +35,13 @@ String Password_Text ="//android.webkit.WebView[@content-desc=\"Üye Giriş Sayf
 
     @Test
     public void loginTest () throws InterruptedException {
-
+        
         loginAccount();
         NameChange();
     }
 
     //for login
     public void loginAccount() {
-        WebElement appOpen = driver.findElementByAccessibilityId("Hepsiburada");
-        appOpen.click();
         WebElement account = driver.findElementById("com.pozitron.hepsiburada:id/account_icon");
         account.click();
         WebElement userLogin= driver.findElementById("com.pozitron.hepsiburada:id/llUserAccountLogin");
